@@ -1,0 +1,12 @@
+{
+  "id": "rainbow-slime",
+  "game": "slime-garden",
+  "name": "Rainbow Slime",
+  "version": "1.0.0",
+  "author": "HeZhong",
+  "desc": "Adds a shimmering rainbow slime worth 5 points, and cheers every 10th pop.",
+  "api": 1,
+  "icon": "icon.png",
+  "tags": ["example", "slime"],
+  "locales": { "zh": { "name": "彩虹史莱姆", "desc": "加入一种五彩变幻的史莱姆，每只 5 分；每戳破 10 只给你喝彩。" } }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "hezhong",
+  "version": "1.0.0",
+  "description": "HeZhong (合众) — an open mod hub for web games: a self-hostable server + storefront, a drop-in game SDK and a CLI that turn every player into a creator.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "hezhong": "cli/hezhong.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./sdk/hezhong.d.ts",
+      "default": "./sdk/hezhong.js"
+    },
+    "./panel": {
+      "types": "./sdk/panel.d.ts",
+      "default": "./sdk/panel.js"
+    },
+    "./validate": {
+      "types": "./sdk/validate.d.ts",
+      "default": "./sdk/validate.js"
+    },
+    "./server": "./server/server.mjs"
+  },
+  "files": [
+    "sdk",
+    "server",
+    "cli",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node server/server.mjs",
+    "test": "node test/run.mjs",
+    "example": "node examples/serve.mjs"
+  },
+  "keywords": [
+    "mods",
+    "modding",
+    "web-games",
+    "game-sdk",
+    "workshop",
+    "creator-platform",
+    "self-hosted"
+  ],
+  "types": "./sdk/hezhong.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qwasx/hezhong.git"
+  }
+}

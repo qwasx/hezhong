@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slime Garden · HeZhong demo</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #dfeccf; font: 14px/1.5 system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; overflow: hidden; }
+    canvas { display: block; width: 100vw; height: 100vh; }
+    .ui { position: fixed; top: 12px; left: 12px; display: flex; gap: 8px; align-items: center; }
+    .ui button { font: inherit; padding: 6px 14px; border-radius: 8px; border: 1px solid #9bb48a; background: #fff; cursor: pointer; }
+    .ui span { background: rgba(255,255,255,.8); padding: 4px 10px; border-radius: 8px; }
+    .toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: rgba(30,40,30,.85); color: #fff; padding: 8px 16px; border-radius: 10px; opacity: 0; transition: opacity .3s; pointer-events: none; }
+    .toast.on { opacity: 1; }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div class="ui"><button id="mods">Mods · 模组</button><span id="score"></span></div>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
